@@ -8,7 +8,7 @@ export const Home = () => {
         <p>Welcome to my portifolio!</p>
         <h2>See more:</h2>
         <div className="CardsDiv">
-            
+
             <HomeCards 
             titulo="Projects" 
             descricao="Here are all my projects (In development or not)"
@@ -20,8 +20,8 @@ export const Home = () => {
             />
 
             <HomeCards 
-            titulo="About me" 
-            descricao="Here you will find the real me, my knowledge"
+            titulo="Contact" 
+            descricao="You can contact me if "
             />
         </div>
     </div>
