@@ -1,0 +1,27 @@
+.Home{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-titulo, .Home h2{
+    font-family: Special Gothic Expanded One;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.home-titulo{
+    font-size: 8rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px black;
+    color: white;
+    transition: color .5s, text-shadow .5s;
+}
+
+.home-titulo:hover{
+    text-shadow: 0 0 30px gray;
+    color: black;
+    user-select: none;
+}
