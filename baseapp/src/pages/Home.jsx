@@ -9,10 +9,12 @@ export const Home = () => {
         <h2>See more:</h2>
         <div className="CardsDiv">
 
+            <div>
             <HomeCards 
             titulo="Projects" 
             descricao="Here are all my projects (In development or not)"
             />
+            </div>
 
             <HomeCards 
             titulo="About me" 

@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .home-titulo, .Home h2{
@@ -24,4 +25,33 @@
     text-shadow: 0 0 30px gray;
     color: black;
     user-select: none;
+}
+
+.CardsDiv{
+    display: grid;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,300px);
+    gap: 50px;
+    padding: 0 100px;
+}
+
+.HomeCards .Titulo{
+    font-family: Special Gothic Expanded One;
+    font-weight: 100;
+}
+
+.HomeCards{
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px black;
+    height: 200px;
+    transition: all .5s;
+    background-color: white;
+}
+
+.HomeCards:hover{
+    transform: scale(102%);
+    cursor: pointer;
 }
