@@ -10,13 +10,13 @@
 .home-titulo, .Home h2{
     font-family: Special Gothic Expanded One;
     font-weight: 800;
-    font-style: normal;
+    font-style: bold;
 }
 
 .home-titulo{
-    font-size: 8rem;
+    font-size: clamp(.5rem,10vw,8rem);
     text-transform: uppercase;
-    text-shadow: 0 0 20px black;
+    text-shadow: 0 0 10px black;
     color: white;
     transition: color .5s, text-shadow .5s;
 }
@@ -54,4 +54,15 @@
 .HomeCards:hover{
     transform: scale(102%);
     cursor: pointer;
+}
+
+.bg-dec1{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 300px;
+    width: 300px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    right: 0;
+    bottom: 0;
+    filter: blur(5rem);
 }
