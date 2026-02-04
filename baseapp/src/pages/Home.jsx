@@ -5,21 +5,19 @@ export const Home = () => {
   return(
     <div className="Home">
         <h1 className="home-titulo">Miguel</h1>
-        <p>Welcome to my portifolio!</p>
         <div className="CardsDiv">
 
-            <div>
             <HomeCards 
             titulo="Projects" 
             descricao="Here are all my projects (In development or not)"
             cor="#22223b"
             />
-            </div>
 
             <HomeCards 
             titulo="About me" 
             descricao="Here you will find the real me, my knowledge"
             cor="#9a8c98"
+            rota="/aboutme"
             />
 
             <HomeCards 
@@ -29,7 +27,6 @@ export const Home = () => {
             />
         </div>
 
-        <div className="bg-dec1"></div>
     </div>
   )
 }

@@ -1,54 +1,69 @@
 .Home{
-    color: black;
+    color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 250px ), repeating-linear-gradient( #040404, #040404 );
+    background-size: 100% 100%;
+    transition: all 1s;
 }
 
-.home-titulo, .Home h2{
+.Home *{
+    /* border: 1px solid red; */
+}
+
+.home-titulo, 
+.Home h2{
     font-family: Special Gothic Expanded One;
     font-weight: 800;
     font-style: bold;
 }
 
 .home-titulo{
+    position: relative;
+    width: auto;
     font-size: clamp(.5rem,10vw,8rem);
     text-transform: uppercase;
-    text-shadow: 0 0 10px black;
-    color: white;
-    transition: color .5s, text-shadow .5s;
-}
-
-.home-titulo:hover{
     text-shadow: 0 0 30px gray;
-    color: black;
+    color: rgb(255, 255, 255);
+    transition: color .5s, text-shadow .5s;
+    animation: tituloInicio 1s ease-in-out;
     user-select: none;
 }
 
-.CardsDiv{
-    display: grid;
-    box-sizing: border-box;
-    width: 100%;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit,300px);
-    gap: 50px;
-    padding: 0 100px;
+@keyframes tituloInicio{
+    from{
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    to{
+        text-shadow: 0 0 30px gray;
+        color: rgb(255, 255, 255);
+    }
 }
 
-.HomeCards .Titulo{
-    font-family: Special Gothic Expanded One;
-    font-weight: 100;
+.CardsDiv{
+    position: relative;
+    display: grid;
+    box-sizing: border-box;
+    justify-content: center;
+    grid-template-rows: repeat(auto-fit,150px);
+    gap: 50px;
+    padding: 50px 10px;
 }
 
 .HomeCards{
     border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 10px black;
-    height: 200px;
+    padding: 10px;
     transition: all .5s;
-    background-color: white;
+    /* background-color: rgb(0, 0, 0); */
+    animation-timeline: view();
 }
 
 .HomeCards:hover{
@@ -56,13 +71,7 @@
     cursor: pointer;
 }
 
-.bg-dec1{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 300px;
-    width: 300px;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    right: 0;
-    bottom: 0;
-    filter: blur(5rem);
+.HomeCards .Titulo{
+    font-family: Special Gothic Expanded One;
+    font-weight: 100;
 }

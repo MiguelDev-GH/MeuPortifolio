@@ -1,0 +1,31 @@
+.AboutMe{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutMe *{
+    animation-timeline: view();
+    animation-name: h1anim;
+    animation-range: entry 10% cover 30%;
+}
+
+@keyframes h1anim {
+    from{
+        transform: translateX(50%);
+        filter: blur(10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
