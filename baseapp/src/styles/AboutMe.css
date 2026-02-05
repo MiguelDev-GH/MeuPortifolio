@@ -2,12 +2,13 @@
     margin: 0;
     box-sizing: border-box;
     background-color: black;
-    height: auto;
+    height: calc(auto + 100px);
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .AboutMe *{
@@ -29,3 +30,19 @@
     }
 }
 
+span.colorHTML {color: red;}
+span.colorCSS {color: blue;}
+span.colorJS {color: yellow;}
+span.colorPYTHON {color: cadetblue;}
+
+.AboutMe p{
+    width: 70%;
+}
+
+.competenciasIcon{
+    display: flex;
+    justify-content: center; /* Centraliza tudo horizontalmente */
+    flex-wrap: wrap;         /* Permite quebrar para a linha de baixo */
+    gap: 12px;
+    max-width: 350px;
+}

@@ -1,5 +1,5 @@
-import {BriefcaseBusinessIcon, CircleUserRound, Link, Phone} from "lucide-react"
-import { useNavigate } from "react-router-dom"
+import {BriefcaseBusinessIcon, CircleUserRound, Phone} from "lucide-react"
+import {useNavigate} from "react-router-dom"
 
 function HomeCards(props){
 
@@ -17,7 +17,7 @@ function HomeCards(props){
     <div className="HomeCards" style={style} onClick={navegateHandle}>
       {props.titulo === "Projects" && <BriefcaseBusinessIcon/>}
       {props.titulo === "About me" && <CircleUserRound/>}
-      {props.titulo === "Social Medias & Contact" && <Phone />}
+      {props.titulo === "Contact" && <Phone />}
         <h3 className="Titulo">{props.titulo}</h3>
         <p className="Descrição">{props.descricao}</p>
     </div>
