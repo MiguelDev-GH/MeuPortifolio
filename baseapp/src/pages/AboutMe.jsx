@@ -1,3 +1,4 @@
+import {Github} from 'lucide-react'
 import '../styles/AboutMe.css'
 
 export const AboutMe = () => {
@@ -35,8 +36,11 @@ export const AboutMe = () => {
       <p>
         During my academic coursework, I gained practical experience with <b>C</b>, specifically in <span className='colorPYTHON'><b>Data Structures</b></span> 
         . One highlight was developing a numerical expression calculator using stack 
-        data structures with my team (Link to repository).
+        data structures with my team.
       </p>
+
+      <a href="https://github.com/MiguelDev-GH/Trabalho-de-Estrutura-Pilha" className='trabEstruturaLink'><Github/>Project Repository</a>
+
       <div>
       <p>
         I hold a Technical High School degree, where I excelled in technology subjects such as 

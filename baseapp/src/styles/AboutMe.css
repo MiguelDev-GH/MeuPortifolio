@@ -9,6 +9,8 @@
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    padding: 40px 0;
+    color: white;
 }
 
 .AboutMe *{
@@ -45,4 +47,22 @@ span.colorPYTHON {color: cadetblue;}
     flex-wrap: wrap;         /* Permite quebrar para a linha de baixo */
     gap: 12px;
     max-width: 350px;
+}
+
+.trabEstruturaLink{
+    position: relative;
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    color: rgb(11, 148, 136);
+    border: #0b94886b 3px solid;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all .5s ease;
+}
+
+.trabEstruturaLink:hover{
+    scale: 1.05;
+    border-color: #0b9488;
+    text-shadow: #0b9488 0 0 5px;
 }
