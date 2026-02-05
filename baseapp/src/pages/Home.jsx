@@ -2,6 +2,7 @@ import "../styles/Home.css"
 import HomeCards from "../components/HomeCards"
 
 export const Home = () => {
+
   return(
     <div className="Home">
         <h1 className="home-titulo">Miguel</h1>
