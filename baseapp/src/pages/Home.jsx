@@ -1,10 +1,28 @@
 import "../styles/Home.css"
 import HomeCards from "../components/HomeCards"
+import LogoM from "../assets/LogoM.png"
 
 export const Home = () => {
 
+  const numRandom = (min,max) => {
+    return (Math.floor(Math.random() * (max - min + 1)) + min)
+  }
+
   return(
     <div className="Home">
+
+        <div className="bgEffect">
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(1,4) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(1,4) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(1,4) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(1,4) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(1,4) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(1,4) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(1,4) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(1,4) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+        </div>
+
+        <img src={LogoM} alt="Miguel Logo" className='LogoMHome'></img>
         <h1 className="home-titulo">Miguel</h1>
         <div className="CardsDiv">
 

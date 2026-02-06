@@ -1,13 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {useLocation, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from "./components/NavBar"
 import { Home, Contact, AboutMe } from "./pages"
 
-
 function App(){
+
+  const location = useLocation()
 
   return (
     <>
-      <NavBar />
+      {location.pathname !== "/" && <NavBar />}
       <main>
         <Routes>
           <Route path="/" element={<Home/>}/>
@@ -16,7 +17,7 @@ function App(){
         </Routes>
       </main>
     </>
-  )
+  );
 }
 
 export default App

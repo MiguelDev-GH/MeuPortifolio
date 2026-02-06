@@ -15,10 +15,12 @@ function HomeCards(props){
 
   return (
     <div className="HomeCards" style={style} onClick={navegateHandle}>
-      {props.titulo === "Projects" && <BriefcaseBusinessIcon/>}
-      {props.titulo === "About me" && <CircleUserRound/>}
-      {props.titulo === "Social Medias & Contact" && <Phone />}
+      <div>
+        {props.titulo === "Projects" && <BriefcaseBusinessIcon/>}
+        {props.titulo === "About me" && <CircleUserRound/>}
+        {props.titulo === "Social Medias & Contact" && <Phone />}
         <h3 className="Titulo">{props.titulo}</h3>
+      </div>
         <p className="Descrição">{props.descricao}</p>
     </div>
   )
