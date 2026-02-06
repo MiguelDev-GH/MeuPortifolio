@@ -18,6 +18,16 @@
     /* border: 1px solid red; */
 }
 
+.fundoEffect{
+    position: absolute;
+    height: 150dvh;
+    width: 150dvh;
+    top: -75dvh;
+    transform: scale(120%);
+    background-image: radial-gradient(circle at 50% 50%,rgba(255, 255, 255, 0.1), rgba(255,255,255,0) 50%);
+    pointer-events: none;
+}
+
 .AboutMe h1{
     position: relative;
 }
@@ -48,7 +58,21 @@
     z-index: 0;
     line-height: 1.2;
     user-select: none;
+    opacity: 0;
     transition: text-shadow 1s ease, color .5s ease;
+    animation: animarNomes 1s ease;
+    animation-delay: var(--animationDelay);
+    animation-fill-mode: forwards;
+}
+
+@keyframes animarNomes {
+    from {
+        transform: translateY(-30%);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .AboutMe .nome h4:hover{
@@ -62,7 +86,11 @@
     justify-content: center;
     align-items: center;
     gap: 3%;
-    padding: 60px 0;
+    padding: 60px 20px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
     
 }
 
@@ -118,8 +146,18 @@ span.colorPYTHON {color: cadetblue;}
     background: rgba(150,150,150,.12);
 }
 
-@media screen and (width<1000px) {
+@media screen and (width<1024px) {
     .AboutMe{
         padding: 60px 0;
+    }
+
+    .AboutMe .nome{
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .AboutMe .nome h4{
+        line-height: .2;
     }
 }

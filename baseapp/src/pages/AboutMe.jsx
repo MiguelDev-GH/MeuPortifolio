@@ -5,10 +5,12 @@ export const AboutMe = () => {
   return (
     <div className="AboutMe">
 
+      <div className='fundoEffect'></div>
+
         <div className="nome">
-          <h4>Miguel</h4>
-          <h4>Chagas</h4>
-          <h4>Maciel</h4>
+          <h4 style={{"--animationDelay":"0.2s"}}>Miguel</h4>
+          <h4 style={{"--animationDelay":"0.4s"}}>Chagas</h4>
+          <h4 style={{"--animationDelay":"0.6s"}}>Maciel</h4>
         </div>
 
         <h1>About Me</h1>
