@@ -3,10 +3,6 @@ import {useNavigate} from "react-router-dom"
 
 function HomeCards(props){
 
-  const style = {
-    // borderBottom:`solid 10px ${props.cor}`
-  }
-
   const navigate = useNavigate()
 
   const navegateHandle = () =>{
@@ -14,7 +10,7 @@ function HomeCards(props){
   }
 
   return (
-    <div className="HomeCards" style={style} onClick={navegateHandle}>
+    <div className="HomeCards" onClick={navegateHandle} style={{'--animationTempo':props.animationTempo}}>
       <div>
         {props.titulo === "Projects" && <BriefcaseBusinessIcon/>}
         {props.titulo === "About me" && <CircleUserRound/>}

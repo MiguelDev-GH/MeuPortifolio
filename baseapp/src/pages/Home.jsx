@@ -33,6 +33,7 @@ export const Home = () => {
             titulo="Projects" 
             descricao="Here are all my projects (In development or not)"
             cor="#22223b"
+            animationTempo="1s"
             />
 
             <span className="homeCardBorder"></span>
@@ -42,6 +43,7 @@ export const Home = () => {
             descricao="Here you will find the real me, my knowledge"
             cor="#9a8c98"
             rota="/aboutme"
+            animationTempo="1.5s"
             />
 
             <span className="homeCardBorder"></span>
@@ -50,6 +52,7 @@ export const Home = () => {
             titulo="Social Medias & Contact" 
             descricao="You can found my social medias e things like email for contact"
             cor="#8d99ae"
+            animationTempo="2s"
             />
         </div>
 

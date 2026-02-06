@@ -4,9 +4,17 @@ import '../styles/AboutMe.css'
 export const AboutMe = () => {
   return (
     <div className="AboutMe">
-        <h4 className="nome">Miguel Chagas Maciel</h4>
+
+        <div className="nome">
+          <h4>Miguel</h4>
+          <h4>Chagas</h4>
+          <h4>Maciel</h4>
+        </div>
+
         <h1>About Me</h1>
+
         <h3>What i already used to build something:</h3>
+
         <div className='competenciasIcon'>
             <img src="https://skillicons.dev/icons?i=c" height="40" alt="c logo"  />
             <img src="https://skillicons.dev/icons?i=cpp" height="40" alt="cplusplus logo"  />

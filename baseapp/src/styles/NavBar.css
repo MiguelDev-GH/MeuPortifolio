@@ -9,6 +9,7 @@ nav{
     justify-content: space-between;
     padding: 0 70px;
     background-color: transparent;
+    z-index: 999;
 }
 
 .LogoM{

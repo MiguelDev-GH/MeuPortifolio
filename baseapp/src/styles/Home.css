@@ -6,7 +6,7 @@
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    min-height: 100dvh;
     background-color: #040404;
     opacity: 1;
     background-image: repeating-radial-gradient( circle at 0 0, rgba(255,255,255,0) 0, #000000 250px );
@@ -90,6 +90,7 @@
     line-height: 0;
     z-index: 0;
     animation: subtituloInicio 2.5s ease;
+    font-size: clamp(.1rem,4vw,1.2rem);
 }
 
 .home-titulo h1{
@@ -155,9 +156,7 @@
     padding: 10px;
     transition: all .5s ease;
     /* background-color: rgb(0, 0, 0); */
-    animation:aparecerInicioCards 2s ease;
-
-    transition: all .5s ease;
+    animation:aparecerInicioCards var(--animationTempo) ease;
 }
 
 @keyframes aparecerInicioCards {
@@ -196,14 +195,14 @@
     font-weight: 100;
 }
 
-@media screen and (width<1000px) {
+@media screen and (width<=1024px) {
     .Home{
         display: flex;
         flex-direction: column;
         height: auto;
         min-height: 100dvh;
         overflow-y: auto;
-        background-color: #121212;
+        background-color: #070707;
     }
 
     .CardsDiv{
@@ -225,6 +224,10 @@
         width: 100%;
     }
 
+    .homeCardBorder{
+        display: none;
+    }
+
     .LogoMHome{
         display: none;
     }
@@ -241,4 +244,17 @@
         background: rgba(150,150,150,.5);
 
     }
+
+    .home-titulo{
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes aparecerInicioCards {
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
 }
