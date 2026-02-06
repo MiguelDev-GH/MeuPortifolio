@@ -28,4 +28,10 @@ nav{
 .navLinks a{
     text-decoration: none;
     color: white;
+    transition: all .5s ease;
+}
+
+.navLinks a:hover{
+    text-shadow: 0 0 5px white;
+    transform: scale(102%);
 }

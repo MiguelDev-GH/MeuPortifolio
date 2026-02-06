@@ -9,23 +9,57 @@
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    padding: 40px 0;
+    padding: 0px 0;
     color: white;
+}
+
+.AboutMe *{
+    /* border: 1px solid red; */
+}
+
+.AboutMe h1{
+    position: relative;
+}
+
+.AboutMe h1::after{
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 1px;
+    left: -25%;
+    top: 100%;
+    background: radial-gradient(circle, white, rgba(255,255,255,0));
 }
 
 .AboutMe h3{
     text-align: center;
+    padding-top: 20px;
+}
+
+.AboutMe .nome{
+    text-transform: uppercase;
+    color: rgba(0,0,0,1);
+    text-shadow: 0 0 2px white;
+    font-size: clamp(.5rem,10vw,8rem);
+    text-align: start;
+    position: relative;
+    display: inline;
+    z-index: 0;
+    width: 70%;
+    line-height: 1.2;
+    top: -50px;
 }
 
 .AboutMe p,h3{
     width: 70%;
+    z-index: 1;
 }
 
-.AboutMe *{
+/* .AboutMe *{
     animation-timeline: view();
     animation-name: h1anim;
     animation-range: entry 10% cover 30%;
-}
+} */
 
 @keyframes h1anim {
     from{
@@ -53,23 +87,31 @@ span.colorPYTHON {color: cadetblue;}
     max-width: 350px;
 }
 
+.GithubIcone{
+    z-index: 2;
+}
+
 .trabEstruturaLink{
     position: relative;
     display: flex;
     gap: 5px;
     text-decoration: none;
-    color: rgb(11, 148, 136);
-    border: #0b94886b 3px solid;
+    color: white;
     padding: 10px;
     border-radius: 10px;
     transition: all .5s ease;
-    background-color: #0b94882b;
     backdrop-filter: blur(5px);
     font-weight: bold;
 }
 
 .trabEstruturaLink:hover{
-    scale: 1.05;
-    border-color: #0b9488;
-    text-shadow: #0b9488 0 0 5px;
+    scale: 1.01;
+    box-shadow: 0 0 3px white;
+    background: rgba(150,150,150,.12);
+}
+
+@media screen and (width<1000px) {
+    .AboutMe{
+        padding: 60px 0;
+    }
 }

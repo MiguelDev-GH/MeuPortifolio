@@ -23,7 +23,10 @@ export const Home = () => {
         </div>
 
         <img src={LogoM} alt="Miguel Logo" className='LogoMHome'></img>
-        <h1 className="home-titulo">Miguel</h1>
+        <div className="home-titulo">
+          <h1>Miguel</h1>
+          <h2>Software Engineering Student</h2>
+        </div>
         <div className="CardsDiv">
 
             <HomeCards 

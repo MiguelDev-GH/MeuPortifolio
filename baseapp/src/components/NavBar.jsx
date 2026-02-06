@@ -15,8 +15,8 @@ const NavBar = () => {
     <nav className="navbar">
         <img src={LogoM} alt="Miguel Logo" className="LogoM" onClick={() => linkRota("/")}></img>
         <div className="navLinks">
-            <Link to="/">Home</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/" className="links">Home</Link>
+            <Link to="/contact" className="links">Contact</Link>
         </div>
     </nav>
   )
