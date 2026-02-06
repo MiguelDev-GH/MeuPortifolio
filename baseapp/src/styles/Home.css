@@ -81,7 +81,7 @@
     text-shadow: 0 0 30px gray;
     color: rgb(255, 255, 255);
     transition: color .5s, text-shadow .5s;
-    animation: tituloInicio 3s ease;
+    animation: tituloInicio 2.5s ease;
     user-select: none;
 }
 
@@ -125,7 +125,7 @@
     padding: 10px;
     transition: all .5s ease;
     /* background-color: rgb(0, 0, 0); */
-    animation:aparecerInicioCards 3s ease;
+    animation:aparecerInicioCards 2s ease;
 
     transition: all .5s ease;
 }
