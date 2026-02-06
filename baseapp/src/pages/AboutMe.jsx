@@ -39,7 +39,7 @@ export const AboutMe = () => {
         data structures with my team.
       </p>
 
-      <a href="https://github.com/MiguelDev-GH/Trabalho-de-Estrutura-Pilha" className='trabEstruturaLink'><Github/>Project Repository</a>
+      <a href="https://github.com/MiguelDev-GH/Trabalho-de-Estrutura-Pilha" className='trabEstruturaLink' target='_'><Github/>Project Repository</a>
 
       <div>
       <p>

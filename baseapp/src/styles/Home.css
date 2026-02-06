@@ -12,6 +12,8 @@
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 250px ), repeating-linear-gradient( #040404, #040404 );
     background-size: 100% 100%;
     transition: all 1s;
+    padding: 0px 0;
+    overflow: hidden;
 }
 
 .Home *{
@@ -50,26 +52,46 @@
 
 .CardsDiv{
     position: relative;
-    display: grid;
+    display: flex;
     box-sizing: border-box;
+    flex-direction: column;
     justify-content: center;
-    grid-template-rows: repeat(auto-fit,150px);
-    gap: 50px;
+    align-items: center;
+    gap:10px;
     padding: 50px 10px;
+    transition: all .5s ease;
 }
 
 .HomeCards{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
     border-radius: 10px;
     padding: 10px;
-    transition: all .5s;
+    transition: all .5s ease;
     /* background-color: rgb(0, 0, 0); */
     animation-timeline: view();
-    animation:aparecerInicio 1s ease-in-out forwards;
+    animation-name:aparecerInicio;
+    animation-range: entry 10% cover 30%;
+
+    transition: all .5s ease;
+}
+
+.homeCardBorder{
+    width: 100%;
+    height: 2px;
+    background: radial-gradient(circle, white, black);
+    transition: all .5s ease;
 }
 
 .HomeCards:hover{
     transform: scale(102%);
     cursor: pointer;
+    align-items: start;
+
 }
 
 .HomeCards .Titulo{
@@ -80,4 +102,12 @@
 @keyframes aparecerInicio {
     from{opacity: 0;}
     to{opacity: 1;}
+}
+
+@media screen and (width<1000px) {
+    .Home{
+        flex-direction: column;
+        height: auto;
+        overflow: auto;
+    }
 }

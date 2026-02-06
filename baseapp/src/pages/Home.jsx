@@ -14,12 +14,16 @@ export const Home = () => {
             cor="#22223b"
             />
 
+            <span className="homeCardBorder"></span>
+
             <HomeCards 
             titulo="About me" 
             descricao="Here you will find the real me, my knowledge"
             cor="#9a8c98"
             rota="/aboutme"
             />
+
+            <span className="homeCardBorder"></span>
 
             <HomeCards 
             titulo="Social Medias & Contact" 
