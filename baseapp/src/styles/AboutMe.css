@@ -22,10 +22,20 @@
     position: absolute;
     height: 150dvh;
     width: 150dvh;
-    top: -75dvh;
+    top: -90dvh;
     transform: scale(120%);
-    background-image: radial-gradient(circle at 50% 50%,rgba(255, 255, 255, 0.1), rgba(255,255,255,0) 50%);
+    background-image: radial-gradient(circle at 50% 50%,rgba(255, 255, 255, 0.7), rgba(255,255,255,0) 50%);
+    filter: blur(50px);
     pointer-events: none;
+    animation: fundoEffectAnimar 1s ease;
+    z-index: 0;
+    overflow-x: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fundoEffectAnimar {
+    from { opacity: 0;} 
+    to {  opacity: .8;}
 }
 
 .AboutMe h1{
@@ -149,15 +159,27 @@ span.colorPYTHON {color: cadetblue;}
 @media screen and (width<1024px) {
     .AboutMe{
         padding: 60px 0;
+        overflow-x: hidden;
     }
 
     .AboutMe .nome{
-        flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
+        padding: 0 20px;
+        gap: 3%;
     }
 
     .AboutMe .nome h4{
-        line-height: .2;
+        font-size: 1.6rem;
     }
+
+    .fundoEffect{
+        width: 400px;
+        opacity: .3;
+    }
+
+    @keyframes fundoEffectAnimar {
+    from { opacity: 0;} 
+    to {  opacity: .3;}
+}
 }

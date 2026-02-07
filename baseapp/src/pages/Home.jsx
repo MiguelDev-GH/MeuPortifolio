@@ -12,14 +12,14 @@ export const Home = () => {
     <div className="Home">
 
         <div className="bgEffect">
-          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,2) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
-          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,2) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
-          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,2) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
-          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,2) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
-          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,2) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
-          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,2) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
-          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,2) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
-          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,2) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,4), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,3) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,5), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,3) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,5), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,3) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,5), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,3) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,5), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,3) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,5), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,3) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,5), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,3) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,5), '--delay':numRandom(0,6) + "s"}}/>
+          <span style={{'--posX':numRandom(7,93) + "%",'--size':numRandom(30,150) + "px",'--backdropBlur':numRandom(0,3) + "px",'--velocity':numRandom(8,22) + "s",'--zindex':numRandom(-1,5), '--delay':numRandom(0,6) + "s"}}/>
         </div>
 
         <img src={LogoM} alt="Miguel Logo" className='LogoMHome'></img>
@@ -33,6 +33,7 @@ export const Home = () => {
             titulo="Projects" 
             descricao="Here are all my projects (In development or not)"
             cor="#22223b"
+            rota="/projects"
             animationTempo="1s"
             />
 
