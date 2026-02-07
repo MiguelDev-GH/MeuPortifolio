@@ -40,6 +40,8 @@
 
 .AboutMe h1{
     position: relative;
+    opacity: 0;
+    animation: fundoEffectAnimar 1s ease 2s forwards;
 }
 
 .AboutMe h1::after{
@@ -70,9 +72,16 @@
     user-select: none;
     opacity: 0;
     transition: text-shadow 1s ease, color .5s ease;
-    animation: animarNomes 1s ease;
-    animation-delay: var(--animationDelay);
+    animation: 
+    animarNomes 1s ease forwards,
+    animarStillInfinito 7s linear calc(var(--animationDelay) + 0.8s) infinite;
     animation-fill-mode: forwards;
+}
+
+@keyframes animarStillInfinito {
+    0%{color: black;}
+    5%{color: white; text-shadow: 0 0 10px white;}
+    15%{color: black; text-shadow: 0 0 2px white;}
 }
 
 @keyframes animarNomes {
@@ -82,12 +91,8 @@
     } to {
         transform: translateY(0);
         opacity: 1;
+        color: rgba(0,0,0,1);
     }
-}
-
-.AboutMe .nome h4:hover{
-    color: white;
-    text-shadow: 0 0 10px white;
 }
 
 .AboutMe .nome{
@@ -97,7 +102,7 @@
     align-items: center;
     gap: 3%;
     padding: 60px 20px;
-    height: 100%;
+    height: 78dvh;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
@@ -182,4 +187,13 @@ span.colorPYTHON {color: cadetblue;}
     from { opacity: 0;} 
     to {  opacity: .3;}
 }
+}
+
+::-webkit-scrollbar{
+    background-color: rgba(0,0,0,1);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,.1);
+    border-radius: 10px;
 }
