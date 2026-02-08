@@ -8,7 +8,7 @@ function App(){
 
   return (
     <>
-      {location.pathname !== "/" && <NavBar />}
+      {location.pathname !== "/" && <NavBar style={{'--tempoAnimarVar':'2s'}}/>}
       <main>
         <Routes>
           <Route path="/" element={<Home/>}/>

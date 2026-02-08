@@ -10,6 +10,15 @@ nav{
     padding: 0 70px;
     background-color: transparent;
     z-index: 999;
+    animation: animarNav var(--tempoAnimarVar) ease;
+}
+
+@keyframes animarNav {
+    from{
+        transform: translateY(-200px);
+    } to {
+        transform: translateY(0);
+    }
 }
 
 .LogoM{

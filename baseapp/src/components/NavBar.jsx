@@ -3,7 +3,7 @@ import "../styles/NavBar.css"
 import { Link } from "react-router-dom"
 import { useNavigate, useLocation } from "react-router-dom"
 
-const NavBar = () => {
+const NavBar = (props) => {
 
   const navigate = useNavigate()
   const location = useLocation()
@@ -13,7 +13,7 @@ const NavBar = () => {
   }
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={props.style}>
         <img src={LogoM} alt="Miguel Logo" className="LogoM" onClick={() => linkRota("/")}></img>
         <div className="navLinks">
             <Link to="/" className="links">Home</Link>
