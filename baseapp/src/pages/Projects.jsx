@@ -2,19 +2,23 @@ import ProjectCards from "../components/ProjectCards"
 import "../styles/Projects.css"
 
 export const Projects = () => {
+
+    const projetos = ["Projeto 1", "Trabalho de sei la o que", "Tododads"]
+
     return (
         <div className="Projects">
 
-            <h1 className="titulo">My Projects</h1>
+            <h1 className="mainTitulo">My Projects</h1>
 
             <div className="ProjectCardsDiv">
-                <ProjectCards
-                texto="Titulo 1"
-                />
 
-                <ProjectCards
-                texto="Titulo 2"
-                />
+                {projetos.map((projeto,index)=>(
+                    <ProjectCards
+                    texto={`${index}- ${projeto}`}
+                    style={{'--tempoAparecer':`${index/5}s`}}
+                    />
+                ))}
+
             </div>
         </div>
     )

@@ -12,6 +12,7 @@
     /* padding-bottom: 500px; */
     color: white;
     padding: 60px 0;
+    scroll-snap-type: y mandatory;
 }
 
 .AboutMe *{
@@ -106,7 +107,8 @@
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    
+    scroll-snap-align: center;
+    scroll-snap-stop:always;
 }
 
 .AboutMe p,h3{
