@@ -1,3 +1,7 @@
+html{
+    scroll-snap-type: y proximity;
+}
+
 .Projects{
     padding: 0;
     margin: 0;
@@ -41,6 +45,7 @@
     background-color: rgba(255, 255, 255,.01);
     backdrop-filter: blur(5px);
     border-radius: 10px;
+    flex-shrink: 0;
 
     transition: all ease .5s;
 
@@ -51,6 +56,8 @@
     opacity: 0;
     animation: aparecerCards 1.5s ease forwards;
     animation-delay: var(--tempoAparecer);
+
+    scroll-snap-align: center;
 }
 
 .ProjectCards:hover{
@@ -85,8 +92,8 @@
     content: "";
     position: absolute;
     top: 0;
-    left: calc(100% - 10px);
-    width: 10px;
+    left: calc(100% - 5px);
+    width: 5px;
     height: 100%;
     opacity: 0;
     background: radial-gradient(circle,rgba(255, 255, 255, .5) 0%,rgba(255,255,255,0) 100% );

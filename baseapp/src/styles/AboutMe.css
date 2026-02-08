@@ -1,3 +1,7 @@
+html{
+    scroll-snap-type: y proximity;
+}
+
 .AboutMe{
     margin: 0;
     box-sizing: border-box;
@@ -12,7 +16,6 @@
     /* padding-bottom: 500px; */
     color: white;
     padding: 60px 0;
-    scroll-snap-type: y mandatory;
 }
 
 .AboutMe *{
@@ -107,8 +110,7 @@
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    scroll-snap-align: center;
-    scroll-snap-stop:always;
+    scroll-snap-align:end;
 }
 
 .AboutMe p,h3{

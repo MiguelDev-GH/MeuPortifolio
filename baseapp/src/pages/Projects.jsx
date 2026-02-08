@@ -3,7 +3,7 @@ import "../styles/Projects.css"
 
 export const Projects = () => {
 
-    const projetos = ["Projeto 1", "Trabalho de sei la o que", "Tododads"]
+    const projetos = ["Projeto 1", "Trabalho de sei la o que", "Tododads", "sdasldassdl", "llkasndoi" , "llkasndoi", "llkasndoi", "llkasndoi", "llkasndoi"]
 
     return (
         <div className="Projects">
