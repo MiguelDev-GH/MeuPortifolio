@@ -44,7 +44,7 @@ export const AboutMe = () => {
             skills={[
               <img src="https://skillicons.dev/icons?i=express" height="40" alt="express logo"  />,
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" height="40" alt="NodeJS logo"/>,
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg" height="40" alt="Sequelize"/>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg" height="40" alt="Sequelize logo"/>
           
             ]}/>
 
