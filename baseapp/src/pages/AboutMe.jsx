@@ -1,5 +1,6 @@
 import {Github} from 'lucide-react'
 import '../styles/AboutMe.css'
+import SkillCard from '../components/SkillCards'
 
 export const AboutMe = () => {
   return (
@@ -18,17 +19,57 @@ export const AboutMe = () => {
         <h3>What i already used to build something:</h3>
 
         <div className='competenciasIcon'>
-            <img src="https://skillicons.dev/icons?i=c" height="40" alt="c logo"  />
-            <img src="https://skillicons.dev/icons?i=cpp" height="40" alt="cplusplus logo"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-            <img src="https://skillicons.dev/icons?i=express" height="40" alt="express logo"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" height="40" alt="canva logo"  />
+
+            <SkillCard 
+              titulo="Front-End & Design"
+              skills={[
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React logo"  />,
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />,
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML logo"  />,
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" height="40" alt="Canva logo"  />,
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" height="40" alt="Streamlit logo"/>
+              ]}/>
+
+            <SkillCard
+            titulo="Programming Languages"
+            skills={[
+              <img src="https://skillicons.dev/icons?i=c" height="40" alt="c logo"  />,
+              <img src="https://skillicons.dev/icons?i=cpp" height="40" alt="cplusplus logo"  />,
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JS logo"  />,
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python logo"  />,
+            ]}/>
+
+            <SkillCard
+            titulo="Back-End"
+            skills={[
+              <img src="https://skillicons.dev/icons?i=express" height="40" alt="express logo"  />,
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" height="40" alt="NodeJS logo"/>,
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg" height="40" alt="Sequelize"/>
+          
+            ]}/>
+
+            <SkillCard
+            titulo="Tools"
+            skills={[
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="Git logo"  />,
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="40" alt="Github logo" />,
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecolab/googlecolab-original.svg" height="40" alt="GoogleColab logo" />,
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="40" alt="VSCode logo" />,  
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg" height="40" alt="NeoVim logo" />
+            ]}/>
+
+            <SkillCard
+            titulo="Database"
+            skills={[
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
+            ]}/>
+
+            <SkillCard
+            titulo="OS"
+            skills={[
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg" height="40" alt="ArchLinux logo"/>
+            ]}/>
+
         </div>
 
           <h3> Overview </h3>
