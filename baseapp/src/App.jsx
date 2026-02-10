@@ -1,4 +1,4 @@
-import {useLocation, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {useLocation, BrowserRouter as Router, HashRouter, Route } from 'react-router-dom';
 import NavBar from "./components/NavBar"
 import { Home, Contact, AboutMe, Projects } from "./pages"
 
@@ -10,12 +10,12 @@ function App(){
     <>
       {location.pathname !== "/" && <NavBar style={{'--tempoAnimarVar':'2s'}}/>}
       <main>
-        <Routes>
+        <HashRouter>
           <Route path="/" element={<Home/>}/>
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/aboutme" element={<AboutMe/>}/>
           <Route path="/contact" element={<Contact/>}/>
-        </Routes>
+        </HashRouter>
       </main>
     </>
   );
