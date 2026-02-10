@@ -135,12 +135,14 @@ span.colorJS {color: yellow;}
 span.colorPYTHON {color: cadetblue;}
 
 .competenciasIcon{
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(6,max-content);
     justify-content: center; 
-    align-items: center;
-    flex-wrap: wrap;         
+    align-items: stretch;
     gap: 12px;
+    box-sizing: border-box;
+    width: 50%;
 }
 
 .SkillCard{
@@ -150,18 +152,28 @@ span.colorPYTHON {color: cadetblue;}
     align-items: center;
     box-shadow: 0 0 25px rgba(255,255,255,.1);
     border-radius: 10px;
-    padding: 5px 20px;
-    transition: opacity .5s ease, transform .2s ease;
+    padding: 10px 20px;
+    transition: opacity .5s ease, transform .2s ease, box-shadow .1s ease;
     user-select: none;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
+.SkillCard:nth-child(1),
+.SkillCard:nth-child(2),
+.SkillCard:nth-child(3),
+.SkillCard:nth-child(6) {grid-column: span 2;}
+
+.SkillCard:nth-child(4) {grid-column: span 3;}
+
 .SkillCard:hover{
+    opacity: 1;
     transform: scale(1.05);
 }
 
 .competenciasIcon:hover .SkillCard:not(:hover){
-    opacity: .1;
-    box-shadow: 0 0 0;
+    opacity: .5;
+    box-shadow: 0 0 0 rgba(255,255,255,0);
 }
 
 .SkillCard h2{
@@ -175,6 +187,7 @@ span.colorPYTHON {color: cadetblue;}
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap
 }
 
 .GithubIcone{
@@ -214,6 +227,18 @@ span.colorPYTHON {color: cadetblue;}
         gap: 20px;
     }
 
+    .AboutMe .nome::after,
+    .AboutMe .nome::before{
+        content: "";
+        box-shadow: 0 0 2px rgba(255,255,255,.05);
+        border-radius: 10px;
+        position: relative;
+        width: 100%;
+        height: 20%;
+        top:0;
+        left: 0;
+    }
+
     .AboutMe .nome h4{
         font-size: 4rem;
         line-height: 1;
@@ -247,6 +272,7 @@ span.colorPYTHON {color: cadetblue;}
         align-items: center;
         flex-wrap: wrap;         
         gap: 12px;
+        width: 90%;
     }
 
     .SkillCard{
