@@ -14,6 +14,8 @@ export const Projects = () => {
 
                 {projetos.map((projeto,index)=>(
                     <ProjectCards
+                    key={index}
+                    id={index}
                     texto={`${index}- ${projeto}`}
                     style={{'--tempoAparecer':`${index/5}s`}}
                     />
