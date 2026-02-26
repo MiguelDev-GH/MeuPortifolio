@@ -29,12 +29,13 @@ export const Home = () => {
         </div>
         <div className="CardsDiv">
 
-            <HomeCards 
+            <HomeCards  
             titulo="Projects" 
             descricao="Here are all my projects (In development or not)"
             cor="#22223b"
-            rota="/projects"
+            // rota="/projects"
             animationTempo="1s"
+            className="indisponivel"
             />
 
             <span className="homeCardBorder"></span>
@@ -45,6 +46,7 @@ export const Home = () => {
             cor="#9a8c98"
             rota="/aboutme"
             animationTempo="1.5s"
+            className="aboutme"
             />
 
             <span className="homeCardBorder"></span>
@@ -54,7 +56,9 @@ export const Home = () => {
             descricao="You can found my social medias e things like email for contact"
             cor="#8d99ae"
             animationTempo="2s"
+            className="indisponivel"
             />
+
         </div>
 
     </div>

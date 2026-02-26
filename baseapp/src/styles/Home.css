@@ -208,6 +208,16 @@
     font-weight: 100;
 }
 
+.indisponivel{
+    opacity: .1;
+}
+
+.indisponivel:hover{
+    transform: scale(1);
+    cursor:default;
+    user-select: none;
+}
+
 @media screen and (width<=1024px) {
     .Home{
         display: flex;

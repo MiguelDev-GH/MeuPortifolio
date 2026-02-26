@@ -10,7 +10,7 @@ function HomeCards(props){
   }
 
   return (
-    <div className="HomeCards" onClick={navegateHandle} style={{'--animationTempo':props.animationTempo}}>
+    <div className={`HomeCards ${props.className || ""}`} onClick={navegateHandle} style={{'--animationTempo':props.animationTempo}}>
       <div>
         {props.titulo === "Projects" && <BriefcaseBusinessIcon/>}
         {props.titulo === "About me" && <CircleUserRound/>}
